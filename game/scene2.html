@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../icon.png">
+    <link rel="stylesheet" href="scene2.css">
+    <title>Gabi's Present</title>
+</head>
+<body>
+    <!-- 1 BEDROOM -->
+    <div class="container" id="A">
+        <img src="../bg/br.png" class="bg-img">
+        <h1 id="Atext"></h1>
+        <div class="con-icon">
+            <img src="../icon/yuchi.png" class="char-icon">
+        </div>
+        <div class="btns">
+            <button>-</button>
+            <button onclick="br(1)">GIFT</button>
+            <button onclick="br(2)">BATHROOM</button>
+            <button onclick="br(3)">LIVING ROOM</button>
+        </div>
+    </div>
+    <!-- 2 GIFT -->
+    <div class="container" id="B" style="display:none;">
+        <img src="../bg/gift.png" class="bg-img">
+        <h1 id="Btext"></h1>
+        <div class="con-icon">
+            <img src="../icon/yuchi.png" class="char-icon">
+        </div>
+        <div class="btns">
+            <button>-</button>
+            <button>-</button>
+            <button onclick="gift(1)">BACK</button>
+            <button onclick="gift(2)" id="THE-GIFT">TAKE THE GIFT</button>
+        </div>
+    </div>
+    <!-- 3 BATHROOM -->
+    <div class="container" id="C" style="display:none;">
+        <img src="../bg/rr.png" class="bg-img">
+        <h1 id="Ctext"></h1>
+        <div class="con-icon">
+            <img src="../icon/yuchi.png" class="char-icon">
+        </div>
+        <div class="btns">
+            <button>-</button>
+            <button onclick="rr(1)">BEDROOM</button>
+            <button onclick="rr(2)">TAKE BATH</button>
+            <button onclick="rr(3)">USE TOOTHBRUSH</button>
+        </div>
+    </div>
+    <!-- 4 LIVING ROOM -->
+    <div class="container" id="D" style="display:none;">
+        <img src="../bg/lr.png" class="bg-img">
+        <h1 id="Dtext"></h1>
+        <div class="con-icon">
+            <img src="../icon/yuchi.png" class="char-icon">
+        </div>
+        <div class="btns">
+            <button>-</button>
+            <button onclick="lr(1)">GO OUTSIDE</button>
+            <button onclick="lr(2)" id="KITCHEN">KITCHEN</button>
+            <button onclick="lr(3)">BEDROOM</button>
+        </div>
+    </div>
+    <!-- 5 KITCHEN -->
+    <div class="container" id="E" style="display:none;">
+        <img src="../bg/k.png" class="bg-img">
+        <h1 id="Etext"></h1>
+        <div class="con-icon">
+            <img src="../icon/yuchi.png" class="char-icon">
+        </div>
+        <div class="btns">
+            <button onclick="k(1)">LIVING ROOM</button>
+            <button onclick="k(2)">COOK</button>
+            <button onclick="k(3)" id="EAT-MEAL">EAT</button>
+            <button onclick="k(4)" id="DRINK-WATER">DRINK WATER</button>
+        </div>
+    </div>
+    <!-- 6 HOUSE OUTSIDE -->
+    <div class="container" id="F" style="display:none;">
+        <img src="../bg/house.png" class="bg-img">
+        <h1 id="Ftext"></h1>
+        <div class="con-icon">
+            <img src="../icon/yuchi.png" class="char-icon">
+        </div>
+        <div class="btns">
+            <button>-</button>
+            <button>-</button>
+            <button onclick="house(1)">GO INSIDE</button>
+            <button onclick="house(2)" id="BUS-RIDE">TOOK A BUS</button>
+        </div>
+    </div>
+    <!-- 7 BUS -->
+    <div class="container" id="G" style="display:none;">
+        <img src="../bg/bus.png" class="bg-img">
+        <h1 id="Gtext"></h1>
+        <div class="con-icon">
+            <img src="../icon/yuchi.png" class="char-icon">
+        </div>
+        <div class="btns">
+            <button>-</button>
+            <button>-</button>
+            <button>-</button>
+            <button id="GOTO-PARK" onclick="bus()">PARK</button>
+        </div>
+    </div>
+    <!-- 8 PARK -->
+    <div class="container" id="H" style="display:none;">
+        <img src="../bg/park.png" class="bg-img">
+        <h1 id="Htext"></h1>
+        <div class="con-icon">
+            <img src="../icon/gabi.png" class="char-icon" id="icon-gabi">
+            <img src="../icon/yuchi.png" class="char-icon">
+        </div>
+        <div class="btns">
+            <button>-</button>
+            <button>-</button>
+            <button>-</button>
+            <button>-</button>
+        </div>
+    </div>
+    <button class="vol" onclick="music(0)" id="music-off">
+        <img src="../icon/noteOff.png">
+    </button>
+    <button class="vol" onclick="music(1)" id="music-on" style="display:none">
+        <img src="../icon/noteOn.png">
+    </button>
+</body>
+<script src="scene2.js"></script>
+<script src="a.js"></script>
+<script src="b.js"></script>
+<script src="c.js"></script>
+<script src="d.js"></script>
+<script src="e.js"></script>
+<script src="f.js"></script>
+<script src="g.js"></script>
+<script src="h.js"></script>
+</html>
